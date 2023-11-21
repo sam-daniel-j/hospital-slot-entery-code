@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Slot Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospital Slot Booking</h1>
+    </header>
+
+    <main>
+        <h2>Choose Your Preferred Slot</h2>
+        <form id="booking-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" name="patient-name" required>
+            <br>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+            <br>
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+            <br>
+
+            <label for="appointment-time">Appointment Time:</label>
+            <select id="appointment-time" name="appointment-time" required>
+                <option value="">--Select--</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <!-- Add more options as per your requirements -->
+            </select>
+            <br>
+
+            <input type="submit" value="Book Appointment">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Hospital Slot Booking. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
